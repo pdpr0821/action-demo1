@@ -27,4 +27,6 @@ jobs:
             - name: Run tests
               run: npm test
             - name: Deploy
-              run: echo "Deploying........."
+              run: | 
+                echo "Deploying........."
+                echo ${{github.actor}}
